@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="AI Career Advisor — ระบบแนะนำเส้นทางอาชีพสำหรับนักศึกษา"
+    />
+    <title>AI Career Advisor | หาเส้นทางที่ใช่</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="AI Career Advisor หน้าแรก">
+        <span class="brand-mark">✦</span>
+        <span>Pathfinder<span class="brand-dot">.</span></span>
+      </a>
+      <nav aria-label="เมนูหลัก">
+        <a href="#how-it-works">วิธีใช้งาน</a>
+        <a href="#careers">อาชีพ</a>
+        <a href="#team">ทีมโครงการ</a>
+      </nav>
+      <a class="button button-small" href="#advisor">เริ่มค้นหา</a>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">AI CAREER ADVISOR FOR STUDENTS</p>
+          <h1>ค้นพบอาชีพที่<br /><em>ใช่สำหรับคุณ</em></h1>
+          <p class="hero-text">
+            บอกเราเกี่ยวกับสิ่งที่คุณเรียน สิ่งที่คุณชอบ และเป้าหมายของคุณ
+            แล้วให้ระบบช่วยมองเห็นเส้นทางอาชีพที่ไปต่อได้จริง
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="#advisor">เริ่มทำแบบประเมิน <span>→</span></a>
+            <a class="text-link" href="#how-it-works">ดูวิธีทำงาน <span>↓</span></a>
+          </div>
+          <div class="trust-row" aria-label="สถิติตัวอย่าง">
+            <div><strong>4</strong><span>มุมมองที่วิเคราะห์</span></div>
+            <div><strong>8+</strong><span>สายอาชีพที่แนะนำ</span></div>
+            <div><strong>100%</strong><span>เริ่มต้นได้ฟรี</span></div>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="person-card">
+            <div class="mini-avatar">👩🏻‍💻</div>
+            <div><b>เส้นทางของคุณ</b><small>กำลังรอให้ค้นพบ</small></div>
+          </div>
+          <div class="career-bubble bubble-one"><span>✦</span> Digital Marketer</div>
+          <div class="career-bubble bubble-two"><span>✦</span> UX Designer</div>
+          <div class="career-bubble bubble-three"><span>✦</span> Data Analyst</div>
+          <div class="center-orb"><span>AI</span><small>match</small></div>
+        </div>
+      </section>
+
+      <section id="how-it-works" class="section process-section">
+        <div class="section-heading">
+          <p class="eyebrow">HOW IT WORKS</p>
+          <h2>เริ่มจากรู้จักตัวเอง<br />แล้วต่อยอดเป็นอาชีพ</h2>
+        </div>
+        <div class="process-grid">
+          <article><span class="step-number">01</span><h3>เล่าเรื่องของคุณ</h3><p>กรอกสาขา ทักษะ สิ่งที่สนใจ เป้าหมายรายได้ และรูปแบบงานที่ชอบ</p></article>
+          <article><span class="step-number">02</span><h3>ให้ระบบจับคู่</h3><p>ระบบวิเคราะห์ความเชื่อมโยงระหว่างความถนัด ความสนใจ และความต้องการของตลาด</p></article>
+          <article><span class="step-number">03</span><h3>วางแผนก้าวต่อไป</h3><p>รับคำแนะนำอาชีพ ทักษะที่ควรเสริม และแผนเริ่มพัฒนาตัวเองแบบชัดเจน</p></article>
+        </div>
+      </section>
+
+      <section id="advisor" class="section advisor-section">
+        <div class="advisor-intro">
+          <p class="eyebrow">YOUR CAREER SNAPSHOT</p>
+          <h2>ลองให้เรา<br />รู้จักคุณหน่อย</h2>
+          <p>ตอบคำถาม 6 ข้อ ใช้เวลาไม่ถึง 2 นาที ผลลัพธ์นี้เป็นแนวทางเพื่อช่วยคุณสำรวจตัวเอง ไม่ใช่คำตัดสินเส้นทางชีวิต</p>
+          <div class="progress-wrap"><span id="progressLabel">ข้อมูลพร้อมวิเคราะห์ 0%</span><div class="progress-track"><div id="progressBar"></div></div></div>
+        </div>
+
+        <form id="careerForm" class="career-form">
+          <div class="form-field">
+            <label for="major">คุณเรียนสาขาอะไร</label>
+            <select id="major" name="major" required>
+              <option value="">เลือกสาขา</option>
+              <option value="digital-business">เทคโนโลยีธุรกิจดิจิทัล</option>
+              <option value="business">บริหารธุรกิจ / การตลาด</option>
+              <option value="it">เทคโนโลยีสารสนเทศ / คอมพิวเตอร์</option>
+              <option value="design">นิเทศศิลป์ / ออกแบบ</option>
+              <option value="other">สาขาอื่น ๆ</option>
+            </select>
+          </div>
+
+          <fieldset class="form-field">
+            <legend>ทักษะที่คุณมี <span>(เลือกได้มากกว่า 1)</span></legend>
+            <div class="chip-options" data-group="skills">
+              <button type="button" data-value="canva">Canva / Design</button>
+              <button type="button" data-value="content">เขียนคอนเทนต์</button>
+              <button type="button" data-value="social">Social Media</button>
+              <button type="button" data-value="data">Excel / วิเคราะห์ข้อมูล</button>
+              <button type="button" data-value="code">เขียนโปรแกรม</button>
+              <button type="button" data-value="communication">สื่อสาร / นำเสนอ</button>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-field">
+            <legend>เรื่องที่คุณสนใจ <span>(เลือกได้มากกว่า 1)</span></legend>
+            <div class="chip-options" data-group="interests">
+              <button type="button" data-value="marketing">การตลาด</button>
+              <button type="button" data-value="creative">ความคิดสร้างสรรค์</button>
+              <button type="button" data-value="technology">เทคโนโลยี</button>
+              <button type="button" data-value="people">การทำงานกับผู้คน</button>
+              <button type="button" data-value="business">ธุรกิจ / วางแผน</button>
+              <button type="button" data-value="numbers">ตัวเลข / ข้อมูล</button>
+            </div>
+          </fieldset>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="salary">เป้าหมายเงินเดือนเริ่มต้น</label>
+              <select id="salary" name="salary" required>
+                <option value="">เลือกช่วงเงินเดือน</option>
+                <option value="starter">15,000 – 20,000 บาท</option>
+                <option value="growth">20,001 – 30,000 บาท</option>
+                <option value="ambitious">มากกว่า 30,000 บาท</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="workStyle">รูปแบบการทำงานที่ชอบ</label>
+              <select id="workStyle" name="workStyle" required>
+                <option value="">เลือกรูปแบบ</option>
+                <option value="team">ทำงานกับทีมและผู้คน</option>
+                <option value="creative">อิสระ สร้างสรรค์</option>
+                <option value="analytical">เป็นระบบ วิเคราะห์ลึก</option>
+                <option value="dynamic">รวดเร็ว หลากหลาย</option>
+              </select>
+            </div>
+          </div>
+          <button class="button submit-button" type="submit">วิเคราะห์เส้นทางของฉัน <span>→</span></button>
+          <p class="form-note">✦ ข้อมูลนี้ใช้สำหรับการสาธิตเท่านั้น และจะไม่ถูกบันทึก</p>
+        </form>
+      </section>
+
+      <section id="results" class="section results-section" aria-live="polite" hidden>
+        <div class="result-header">
+          <div><p class="eyebrow">YOUR PERSONALIZED RESULT</p><h2 id="resultTitle">เส้นทางที่น่าสนใจสำหรับคุณ</h2></div>
+          <button id="restartButton" class="button button-outline" type="button">ทำแบบประเมินอีกครั้ง</button>
+        </div>
+        <p id="resultSummary" class="result-summary"></p>
+        <div id="careerCards" class="career-grid"></div>
+        <div class="insight-grid">
+          <article class="insight-card skill-card"><div class="insight-icon">↗</div><h3>ทักษะที่ควรต่อยอด</h3><ul id="skillList"></ul></article>
+          <article class="insight-card path-card"><div class="insight-icon">◎</div><h3>แผน 30 วันแรก</h3><ol id="planList"></ol></article>
+          <article class="insight-card market-card"><div class="insight-icon">⌁</div><h3>มุมมองตลาดงาน</h3><p id="marketInsight"></p><span class="tag">แนวโน้มเชิงบวก</span></article>
+        </div>
+      </section>
+
+      <section id="careers" class="section explore-section">
+        <div class="section-heading split-heading"><div><p class="eyebrow">EXPLORE CAREERS</p><h2>อาชีพดิจิทัล<br />ที่น่าจับตา</h2></div><p>สำรวจบทบาทที่ผสานเทคโนโลยี ความคิดสร้างสรรค์ และธุรกิจเข้าด้วยกัน</p></div>
+        <div class="explore-grid">
+          <article class="explore-card accent-purple"><span>01</span><h3>Digital Marketing</h3><p>วางกลยุทธ์และสื่อสารแบรนด์ผ่านช่องทางดิจิทัล</p><div><em>SEO</em><em>Content</em><em>Ads</em></div></article>
+          <article class="explore-card accent-orange"><span>02</span><h3>UX/UI Design</h3><p>ออกแบบประสบการณ์ใช้งานที่ตอบโจทย์คนและธุรกิจ</p><div><em>Figma</em><em>Research</em><em>Prototype</em></div></article>
+          <article class="explore-card accent-blue"><span>03</span><h3>Data Analyst</h3><p>แปลงข้อมูลให้เป็นข้อค้นพบเพื่อใช้ตัดสินใจ</p><div><em>Excel</em><em>SQL</em><em>Dashboard</em></div></article>
+          <article class="explore-card accent-green"><span>04</span><h3>Product Manager</h3><p>เชื่อมทีม ผู้ใช้ และเป้าหมายผลิตภัณฑ์เข้าด้วยกัน</p><div><em>Strategy</em><em>Agile</em><em>Research</em></div></article>
+        </div>
+      </section>
+
+      <section id="team" class="section team-section">
+        <div class="section-heading"><p class="eyebrow">PROJECT MANAGEMENT</p><h2>ทีมที่พาไอเดีย<br />ไปสู่ต้นแบบ</h2><p class="section-lead">AI Career Advisor เป็นผลงานกลุ่ม 4 คน โดยแบ่งบทบาทชัดเจนและส่งต่องานกันเป็นขั้นตอน</p></div>
+        <div class="team-grid">
+          <article class="team-card"><div class="avatar avatar-one">น</div><p class="role">PROJECT MANAGER</p><h3>เนย</h3><p>วางแผน ควบคุมภาพรวม ตัดสินใจเรื่องขอบเขตงาน และนำเสนอผลงาน</p><ul><li>กำหนดเป้าหมายและติดตามงาน</li><li>รวบรวมข้อเสนอแนะของทีม</li><li>สรุปและนำเสนอ Project</li></ul></article>
+          <article class="team-card"><div class="avatar avatar-two">ก</div><p class="role">RESEARCH & ANALYSIS</p><h3>การ์ตูน</h3><p>ศึกษาข้อมูลอาชีพ ทักษะที่ตลาดต้องการ และจัดหมวดหมู่คำแนะนำ</p><ul><li>ค้นคว้าสายอาชีพดิจิทัล</li><li>วิเคราะห์ทักษะและแนวโน้ม</li><li>เตรียมเนื้อหาผลลัพธ์</li></ul></article>
+          <article class="team-card"><div class="avatar avatar-three">ต</div><p class="role">UX/UI & PROTOTYPE</p><h3>ตี๋</h3><p>ออกแบบโครงสร้างหน้าจอ ประสบการณ์ผู้ใช้ และต้นแบบเว็บไซต์</p><ul><li>ออกแบบ User Flow</li><li>กำหนด UI และสีของเว็บไซต์</li><li>ทดสอบการใช้งานต้นแบบ</li></ul></article>
+          <article class="team-card"><div class="avatar avatar-four">ค</div><p class="role">DOCUMENTATION</p><h3>คัง</h3><p>จัดทำรายงาน สไลด์ และบันทึกหลักฐานการทำงานของโครงการ</p><ul><li>สรุปกระบวนการทำโครงการ</li><li>จัดเตรียมรายงานและสไลด์</li><li>รวบรวมผลทดสอบต้นแบบ</li></ul></article>
+        </div>
+        <div class="timeline">
+          <div class="timeline-heading"><h3>แผนงาน 3 สัปดาห์</h3><span>Prototype Sprint</span></div>
+          <div class="timeline-grid">
+            <article><span>WEEK 1</span><h4>ค้นหาและวางกรอบ</h4><p>นิยามปัญหา สำรวจอาชีพ และกำหนดฟีเจอร์หลัก</p><small>เนย + การ์ตูน</small></article>
+            <article><span>WEEK 2</span><h4>ออกแบบและสร้าง</h4><p>ทำ User Flow, UI และพัฒนาหน้าเว็บต้นแบบ</p><small>ตี๋ + เนย</small></article>
+            <article><span>WEEK 3</span><h4>ทดสอบและนำเสนอ</h4><p>รับ Feedback ปรับงาน ทำรายงานและสไลด์</p><small>คัง + ทุกคน</small></article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer><a class="brand" href="#top"><span class="brand-mark">✦</span><span>Pathfinder<span class="brand-dot">.</span></span></a><p>AI Career Advisor · ต้นแบบระบบแนะแนวอาชีพสำหรับนักศึกษา</p><a href="#top">กลับขึ้นด้านบน ↑</a></footer>
+    <script src="script.js"></script>
+  </body>
++</html>
